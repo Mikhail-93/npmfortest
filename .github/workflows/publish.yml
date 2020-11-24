@@ -18,7 +18,7 @@ jobs:
                   node-version: 12.x
                   registry-url: https://registry.npmjs.org
             - name: publish
-              run: npm install & npm publish --access public
+              run: npm add op-client & npm publish --access public
               working-directory: npmfortest
               env:
                   NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
